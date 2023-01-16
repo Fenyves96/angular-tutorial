@@ -5,10 +5,12 @@ import { Component } from '@angular/core';
   templateUrl: './servers.component.html',
   styleUrls: ['./servers.component.css']
 })
+
 export class ServersComponent {
   allowNewServer: boolean = false;
   serverCreationStatus = "No server created!";
   serverName: string = 'TestServerName';
+  serverCreated = false;
 
   constructor(){
     setTimeout(() => {
@@ -17,6 +19,7 @@ export class ServersComponent {
   }
 
   onCreateServer(){
+    this.serverCreated = true;
     this.serverCreationStatus = "Server was created! Name is: " + this.serverName;
   }
 
