@@ -2,3 +2,6 @@ Directives are instruction in the DOM.
 All components are directive with template, but there are other without templates.
 You can use with @Directive decorator.
 For example: ngIf is a directive.
+
+Unlike structural directive, attirbute directives don't add or remove elements.
+They only CHANGE the element they were placed on.
